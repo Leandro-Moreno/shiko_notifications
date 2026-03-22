@@ -1,5 +1,9 @@
 # ShikoNotifications
 
+[![Hex.pm](https://img.shields.io/hexpm/v/shiko_notifications.svg)](https://hex.pm/packages/shiko_notifications)
+[![Docs](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/shiko_notifications)
+[![License](https://img.shields.io/hexpm/l/shiko_notifications.svg)](https://github.com/Leandro-Moreno/shiko_notifications/blob/main/LICENSE)
+
 Elixir SDK for the [shiko.vet](https://shiko.vet) multi-channel notification service.
 
 Send **email**, **SMS**, **WhatsApp**, **push**, and **Telegram** notifications through a single API.

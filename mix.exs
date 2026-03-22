@@ -32,10 +32,8 @@ defmodule ShikoNotifications.MixProject do
   end
 
   defp description do
-    """
-    Elixir SDK for the shiko.vet multi-channel notification service.
-    Send email, SMS, WhatsApp, push, and Telegram notifications with a single API.
-    """
+    "Elixir SDK for the shiko.vet multi-channel notification service. " <>
+      "Send email, SMS, WhatsApp, push, and Telegram notifications with a single API."
   end
 
   defp package do
@@ -48,15 +46,32 @@ defmodule ShikoNotifications.MixProject do
         "API Docs" => "https://notifications.shiko.vet/api/openapi"
       },
       maintainers: ["Shiko Tech <tech@shiko.vet>"],
-      files: ~w(lib .formatter.exs mix.exs README.md LICENSE)
+      files: ~w(lib .formatter.exs mix.exs README.md LICENSE CHANGELOG.md)
     ]
   end
 
   defp docs do
     [
-      main: "ShikoNotifications",
+      main: "readme",
+      source_ref: "v#{@version}",
       source_url: @source_url,
-      extras: ["README.md"]
+      homepage_url: "https://shiko.vet",
+      extras: [
+        "README.md": [title: "Overview"],
+        "CHANGELOG.md": [title: "Changelog"]
+      ],
+      groups_for_modules: [
+        "Client": [ShikoNotifications, ShikoNotifications.Client]
+      ],
+      before_closing_head_tag: fn :html ->
+        """
+        <style>
+          .sidebar-header img { border-radius: 8px; }
+        </style>
+        """
+
+        _ -> ""
+      end
     ]
   end
 end
