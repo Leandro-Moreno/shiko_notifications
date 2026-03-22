@@ -32,8 +32,9 @@ defmodule ShikoNotifications.MixProject do
   end
 
   defp description do
-    "Elixir SDK for the shiko.vet multi-channel notification service. " <>
-      "Send email, SMS, WhatsApp, push, and Telegram notifications with a single API."
+    "Official Elixir SDK by Shiko (https://shiko.vet). " <>
+      "Multi-channel notification service — send email, SMS, WhatsApp, push, and Telegram " <>
+      "notifications through a single API. Built and maintained by the shiko.vet team."
   end
 
   defp package do

@@ -4,9 +4,11 @@
 [![Docs](https://img.shields.io/badge/docs-hexdocs-blue.svg)](https://hexdocs.pm/shiko_notifications)
 [![License](https://img.shields.io/hexpm/l/shiko_notifications.svg)](https://github.com/Leandro-Moreno/shiko_notifications/blob/main/LICENSE)
 
-Elixir SDK for the [shiko.vet](https://shiko.vet) multi-channel notification service.
+Official Elixir SDK by **[Shiko](https://shiko.vet)** for the multi-channel notification service at [notifications.shiko.vet](https://notifications.shiko.vet).
 
 Send **email**, **SMS**, **WhatsApp**, **push**, and **Telegram** notifications through a single API.
+
+> Created and maintained by the [shiko.vet](https://shiko.vet) team. For support: **tech@shiko.vet**
 
 ## Installation
 
